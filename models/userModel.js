@@ -49,6 +49,7 @@ userSchema.pre('save', async function (next) {
   this.passwordConfirm = undefined;
   next();
 });
+// added comment
 
 const User = mongoose.model('User', userSchema);
 
