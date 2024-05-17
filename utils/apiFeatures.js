@@ -52,12 +52,6 @@ class APIFeatures {
     this.query = this.query.skip(skip).limit(limit); // We need to skip 10 results inorder to get to 11, i.e. first one on page2
 
     return this;
-    // if (this.queryString.page) {
-    //   const numTours = await Tour.countDocuments();
-    //   if (skip >= numTours) {
-    //     throw new Error('This page does not exist.');
-    //   }
-    // }
   }
 }
 
